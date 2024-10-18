@@ -1,0 +1,4 @@
+repository "LoveScript@George15526@cloud"
+  path "/"
+    br "/main"
+    co "/main"
