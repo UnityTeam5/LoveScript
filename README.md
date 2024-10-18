@@ -2,15 +2,21 @@
 
 ## 如何協作此專案？(限共同開發者)
 
-步驟一：打開git bash(或者VSCode有裝bash也可使用)先cd至事先建立好的資料夾中，輸入此專案的位置並複製至本地端 `git clone https://github.com/George15526/LoveScript.git`
+步驟一：請先fork這支專案(右上角)
 
-步驟二：打開Unity Hub，左側選單選擇Project，並在右上點擊"Add"，選擇"Add project from disk"，選擇剛剛clone下來的資料夾位置
+<img height="50%" src="https://github.com/user-attachments/assets/f68a706d-2d29-4b77-ba78-7ae72e3fd600" />
+
+步驟二：打開git bash(或者VSCode有裝bash也可使用)先cd至事先建立好的資料夾中，輸入剛剛fork專案的位置並複製至本地端，範例： `git clone https://github.com/George15526/LoveScript.git`
+
+<img height="50%" src="https://github.com/user-attachments/assets/6e491b4a-2618-4ede-bba3-d50a679df5dc" />
+
+步驟三：打開Unity Hub，左側選單選擇Project，並在右上點擊"Add"，選擇"Add project from disk"，選擇剛剛clone下來的資料夾位置
 
 <img height="50%" src="https://github.com/user-attachments/assets/1f53bd0e-9cdf-46e6-b2ac-ff56afc36d4f" />
 
-步驟三：若有發現Unity Hub的Project裡面有LoveScript名字的專案，即可雙擊開啟專案並開始開發囉~
+步驟四：若有發現Unity Hub的Project裡面有LoveScript名字的專案，即可雙擊開啟專案並開始開發囉~
 
-> 注意：在正式開發專案前，請各位確定是否將自己的專案分支改至dev，檢查方式為輸入`git remote`，若不是dev，則請輸入指令`git checkout -b dev`，即可轉至分支dev
+> 注意：在正式開發專案前，請各位確定是否將自己的專案分支改至dev，檢查方式為輸入`git branch`，若不是dev，則請輸入指令`git checkout -b dev`，即可轉至分支dev
 > 注意：若在VSCode的話，在畫面的左下角可更容易知道現在的分支狀況
 
 > <img height="50%" src="https://github.com/user-attachments/assets/ba01decf-3d10-4a6e-8a71-16fbbb8d35d4" />
@@ -26,3 +32,5 @@
 > git add Assets/
 > git commit -m "add a person in project"
 > git push -u origin dev
+
+而在之後專案已經clone到本地端情況下，在每一次的協作中，請一定要先至GitHub倉庫中，查看是否需要更新程式碼(有可能其他協作者有更新東西在dev中，或者經過code review後合併至專案的主要main分支中)，若需要更新程式碼，則需要在改動程式碼前，輸入`git pull`，先將更新的程式碼抓取下來，在做改動會比較好哦~
