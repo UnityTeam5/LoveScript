@@ -12,6 +12,7 @@
 
 > 注意：在正式開發專案前，請各位確定是否將自己的專案分支改至dev，檢查方式為輸入`git remote`，若不是dev，則請輸入指令`git checkout -b dev`，即可轉至分支dev
 > 注意：若在VSCode的話，在畫面的左下角可更容易知道現在的分支狀況
+
 > <img height="50%" src="https://github.com/user-attachments/assets/ba01decf-3d10-4a6e-8a71-16fbbb8d35d4" />
 
 ## Git如何使用？(給還不會使用或不太熟悉git的人服用)
