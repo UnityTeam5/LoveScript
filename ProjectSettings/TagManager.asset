@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Front
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Canvas
+    uniqueID: 2448879131
+    locked: 0
+  - name: Panel
+    uniqueID: 918417617
+    locked: 0
+  - name: UI
+    uniqueID: 968144639
+    locked: 0
+  - name: Buttons
+    uniqueID: 766932669
     locked: 0
