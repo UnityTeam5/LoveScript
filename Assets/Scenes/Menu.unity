@@ -1013,6 +1013,7 @@ GameObject:
   - component: {fileID: 2055813516}
   - component: {fileID: 2055813515}
   - component: {fileID: 2055813518}
+  - component: {fileID: 2055813519}
   m_Layer: 5
   m_Name: Button_Play
   m_TagString: Untagged
@@ -1134,6 +1135,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f64aab1a0738ed42a0a31c7f8c39cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2055813519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055813513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ed13f1f7b1a95438ca4799392b5d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fontPath: "Fonts/FontGenerator/MINGLIU--\u6309\u4EFB\u610F\u9375\u958B\u59CB\u904A\u6232"
+  buttonText: "\u6309\u4EFB\u610F\u9375\u958B\u59CB\u904A\u6232"
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
