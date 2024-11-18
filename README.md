@@ -21,6 +21,58 @@
 
 > <img height="50%" src="https://github.com/user-attachments/assets/ba01decf-3d10-4a6e-8a71-16fbbb8d35d4" />
 
+## 專案資料夾結構(協作者必看！！)
+
+Assets/
+├── Resources/
+│   ├── Fonts/               # 儲存字體相關
+│   │   ├── FontGenerator/   # 儲存 TMP_FontAsset
+│   │   │   ├── MINGLIU--確認.asset
+│   │   │   └── MINGLIU--按任意鍵開始遊戲.asset
+│   │   │
+│   │   └── FontStyle/       # 儲存字體檔案 (.TTC/.ttf/.otf)
+│   │       └── MINGLIU.TTC
+│   │
+│   ├── Sprites/             # 2D 精靈圖像或 UI 資源(目前未分類，下次更新會加入)
+│   │   ├── Icons/
+│   │   │   ├── Arrow-Previous.png
+│   │   │   └── Exit.png
+│   │   └── Backgrounds/     # 背景圖片放置區
+│   │       └── MainMenuBackground.jpg
+│   │
+│   ├── Audio/               # 音效與音樂(預計加入，未新增資料夾)
+│   │   ├── BGM/             # 此為示例
+│   │   │   └── MainTheme.mp3
+│   │   └── SFX/
+│   │       └── ButtonClick.wav
+│   │
+│   │
+│   └── Data/                # 遊戲配置或數據文件(預計加入，未新增資料夾)
+│       ├── GameConfig.json  # 此為示例
+│       └── Localization/
+│           └── zh_TW.json 
+│
+├── Scripts/                 # 腳本文件
+│   ├── Menu/
+│   │   ├── ButtonPlayTextSetter.cs
+│   │   ├── PlayGameHandler.cs
+│   │   ├── QuitGameHandler.cs
+│   │   └── TextEffect.cs
+│   └── SubMenu/
+│       ├── ButtonSubmitTextSetter.cs
+│       ├── ReturnButtonEvent.cs
+│       └── SubmitButtonEvent.cs
+│
+├── Editor/                  # 腳本文件
+│   └── EventSystemChecker.cs
+│
+├── Scenes/                  # 遊戲場景檔案
+│   ├── MainMenu.unity
+│   └── Game.unity
+│
+└── TextMesh Pro/            # 下載TextMesh Pro套件後自動生成，不可更動
+
+
 ## Git如何使用？(給還不會使用或不太熟悉git的人服用)
 
 以此專案為例，假設已經跟著上面的說明成功將專案clone下來後，接下來就只需要特別記三項事情(最常用)
@@ -33,4 +85,4 @@
 > git commit -m "add a person in project"
 > git push -u origin dev
 
-而在之後專案已經clone到本地端情況下，在每一次的協作中，請一定要先至GitHub倉庫中，查看是否需要更新程式碼(有可能其他協作者有更新東西在dev中，或者經過code review後合併至專案的主要main分支中)，若需要更新程式碼，則需要在改動程式碼前，輸入`git pull`，先將更新的程式碼抓取下來，在做改動會比較好哦~
+而在之後專案已經clone到本地端情況下，在每一次的協作中，請一定要先至GitHub倉庫中，查看是否需要更新程式碼(有可能其他協作者有更新東西在dev中，或者經過code review後合併至專案的主要main分支中)，若需要更新程式碼，則需要在改動程式碼前，輸入`git pull`，先將更新的程式碼抓取下來，再做改動會比較好哦~
