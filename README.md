@@ -82,8 +82,11 @@ Assets/
 3. git push -u origin dev => 將剛剛的新增並留言完畢的git檔，推至遠端的git repository的dev分支
 
 > 例子：(branch -> dev)
+
 > git add Assets/
+
 > git commit -m "add a person in project"
+
 > git push -u origin dev
 
 而在之後專案已經clone到本地端情況下，在每一次的協作中，請一定要先至GitHub倉庫中，查看是否需要更新程式碼(有可能其他協作者有更新東西在dev中，或者經過code review後合併至專案的主要main分支中)，若需要更新程式碼，則需要在改動程式碼前，輸入`git pull`，先將更新的程式碼抓取下來，再做改動會比較好哦~
