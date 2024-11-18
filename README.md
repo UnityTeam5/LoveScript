@@ -23,6 +23,7 @@
 
 ## 專案資料夾結構(協作者必看！！)
 
+~~~
 Assets/
 ├── Resources/
 │   ├── Fonts/               # 儲存字體相關
@@ -71,7 +72,7 @@ Assets/
 │   └── Game.unity
 │
 └── TextMesh Pro/            # 下載TextMesh Pro套件後自動生成，不可更動
-
+~~~
 
 ## Git如何使用？(給還不會使用或不太熟悉git的人服用)
 
