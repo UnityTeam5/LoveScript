@@ -11,10 +11,11 @@ public class DinnerCHandler : MonoBehaviour
     private bool isLocked = false;
     void Start()
     {
+        RoleCName = "角色C";
+
         fs = FlowerManager.Instance.CreateFlowerSystem("DinnerCScene", false);
         fs.SetupDialog();
         fs.SetupUIStage();
-        RoleCName = "角色C";
         fs.SetVariable("RoleCName", RoleCName);
     }
 
@@ -49,12 +50,6 @@ public class DinnerCHandler : MonoBehaviour
                         isLocked = false;
                     });
                     isLocked = true;
-                    break;
-                case 2:
-                    if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-                    {
-                        SceneManager.LoadScene("MovieCScene");
-                    };
                     break;
                 default:
                     isGameEnd = true;
