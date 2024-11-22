@@ -1,0 +1,15 @@
+[show]
+[image,fg1,Sprites/Roles/C(Role),-605,-38,1,spFadeIn_1000]
+夜幕降臨，你和新認識的女生──[#RoleCName]，一起來到一間氣氛不錯的小餐廳共進晚餐。[w]
+餐廳的燈光溫暖柔和，菜肴散發出誘人的香氣。[w]
+角色C穿著簡約大方，臉上帶著一絲內斂的微笑。[w]
+
+<color=blue>[#RoleCName]：</color>（拿起菜單，語氣輕鬆）[lr]
+今晚吃什麼呢？這裡的餐點選擇好多，真有點難下決定。[w]
+
+<color=red>我：</color>[lr]
+的確很難選。這種時候，我覺得應該用點策略，像是選擇排序（Selection Sort），逐一找出最好吃的菜。[w]
+
+<color=blue>[#RoleCName]：</color>（笑著點頭）[lr]
+不錯的想法！選擇排序嘛，依次挑出最好的，直到篩選出最想吃的。不過，妳更喜歡選擇排序還是快速排序（Quick Sort）呢？[w]
+
