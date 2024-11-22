@@ -1,3 +1,0 @@
-[show]
-[image,bg,Sprites/Backgrounds/AfternoonCafeA,0,0,0,spFadeIn_1000]
-你好
