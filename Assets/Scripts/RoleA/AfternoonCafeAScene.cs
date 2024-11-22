@@ -13,6 +13,8 @@ public class AfternoonCafeAScene : MonoBehaviour
     void Start(){
         fs = FlowerManager.Instance.CreateFlowerSystem("RoleA",false);
         fs.SetupDialog();
+        fs.SetVariable("RoleA","我老婆");
+        fs.SetVariable("myname","我");
     }
 
     // Update is called once per frame
@@ -71,6 +73,28 @@ public class AfternoonCafeAScene : MonoBehaviour
                     break;
                 case 4:
                     fs.ReadTextFromResource("Txtfiles/AfternoonCafeAText3");
+                    break;
+                case 5:
+                    fs.SetupButtonGroup();
+                    fs.SetupButton("(輕聲問)妳最近有什麼特別想做的事嗎？",()=>{
+                            fs.Resume();
+                            fs.RemoveButtonGroup();
+                            fs.ReadTextFromResource("Txtfiles/AlgonithmAQ3A1Action");
+                            isLocked=false;
+                    });
+                    fs.SetupButton("(輕笑說)妳看起來今天特別放鬆。",()=>{
+                            fs.Resume();
+                            fs.RemoveButtonGroup();
+                            fs.ReadTextFromResource("Txtfiles/AlgonithmAQ3A2Action");
+                            isLocked=false;
+                    });
+                    fs.SetupButton("沉默片刻，跟著她一起看著窗外，享受這片刻的寧靜。",()=>{
+                            fs.Resume();
+                            fs.RemoveButtonGroup();
+                            fs.ReadTextFromResource("Txtfiles/AlgonithmAQ3A3Action");
+                            isLocked=false;
+                    });
+                    isLocked=true;
                     break;
 
             }
