@@ -1,3 +1,3 @@
 [image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
-[c]<color=red>角色A:</color>（輕笑）[lr]
+[c]<color=red>[#RoleA]:</color>（輕笑）[lr]
 不對哦，O(n²) 是最差情況，但通常我們希望快排能保持 O(n log n)。[w]
