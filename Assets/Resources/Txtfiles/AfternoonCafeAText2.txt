@@ -4,4 +4,4 @@
 妳比較喜歡用哪種資料結構來做查找？[w]
 [c]<color=red>[#RoleA]:</color>（點頭）[lr]
 看情況吧，哈希表用來做查找很快，但樹結構也有它的優勢。我最近剛好在學樹和圖的應用。妳還記得二叉搜索樹嗎？它的查找複雜度應該是多少呢？[w]
-[remove,RoleA,spFadeIn_1]
+[remove,RoleA,spFadeOut_1]

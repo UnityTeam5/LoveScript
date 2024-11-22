@@ -12,4 +12,4 @@
 嗯，我用了快速排序，但好像遇到了最差情況，複雜度變成了 O(n²)。[w]
 [c]<color=red>[#RoleA]</color>（眨了眨眼睛）[lr]
 不過你應該知道快速排序在正常情況下的時間複雜度是什麼吧？[w]
-[remove,RoleA,spFadeIn_1]
+[remove,RoleA,spFadeOut_1]

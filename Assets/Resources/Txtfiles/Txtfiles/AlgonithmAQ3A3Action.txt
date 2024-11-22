@@ -1,2 +1,0 @@
-[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
-[c]<color=red>角色A:</color>（輕輕一笑）[lr]

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Flower;
 using System.Runtime.CompilerServices;
+using System;
+using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
 
 public class AfternoonCafeAScene : MonoBehaviour
 {   
@@ -10,11 +13,16 @@ public class AfternoonCafeAScene : MonoBehaviour
     private int progress = 0;
     private bool isGameEnd = false;
     private bool isLocked = false;
+    private String RoleAname;
+    private String myname;
+
     void Start(){
+        RoleAname = "我老婆";
+        myname = "我";
         fs = FlowerManager.Instance.CreateFlowerSystem("RoleA",false);
         fs.SetupDialog();
-        fs.SetVariable("RoleA","我老婆");
-        fs.SetVariable("myname","我");
+        fs.SetVariable("RoleA",RoleAname);
+        fs.SetVariable("myname",myname);
     }
 
     // Update is called once per frame
@@ -76,19 +84,19 @@ public class AfternoonCafeAScene : MonoBehaviour
                     break;
                 case 5:
                     fs.SetupButtonGroup();
-                    fs.SetupButton("(輕聲問)妳最近有什麼特別想做的事嗎？",()=>{
+                    fs.SetupButton("def function_name():",()=>{
                             fs.Resume();
                             fs.RemoveButtonGroup();
                             fs.ReadTextFromResource("Txtfiles/AlgonithmAQ3A1Action");
                             isLocked=false;
                     });
-                    fs.SetupButton("(輕笑說)妳看起來今天特別放鬆。",()=>{
+                    fs.SetupButton("function function_name() {}",()=>{
                             fs.Resume();
                             fs.RemoveButtonGroup();
                             fs.ReadTextFromResource("Txtfiles/AlgonithmAQ3A2Action");
                             isLocked=false;
                     });
-                    fs.SetupButton("沉默片刻，跟著她一起看著窗外，享受這片刻的寧靜。",()=>{
+                    fs.SetupButton("let function_name = function()",()=>{
                             fs.Resume();
                             fs.RemoveButtonGroup();
                             fs.ReadTextFromResource("Txtfiles/AlgonithmAQ3A3Action");
@@ -96,11 +104,40 @@ public class AfternoonCafeAScene : MonoBehaviour
                     });
                     isLocked=true;
                     break;
-
+                case 6:
+                    fs.ReadTextFromResource("Txtfiles/AfternoonCafeAText4");
+                    break;
+                case 7:
+                    fs.SetupButtonGroup();
+                    fs.SetupButton("(輕聲問)妳最近有什麼特別想做的事嗎？",()=>{
+                            fs.Resume();
+                            fs.RemoveButtonGroup();
+                            fs.ReadTextFromResource("Txtfiles/AlgonithmAQ4A1Action");
+                            isLocked=false;
+                    });
+                    fs.SetupButton("(輕笑說)妳看起來今天特別放鬆。",()=>{
+                            fs.Resume();
+                            fs.RemoveButtonGroup();
+                            fs.ReadTextFromResource("Txtfiles/AlgonithmAQ4A2Action");
+                            isLocked=false;
+                    });
+                    fs.SetupButton("沉默片刻，跟著她一起看著窗外，享受這片刻的寧靜。",()=>{
+                            fs.Resume();
+                            fs.RemoveButtonGroup();
+                            fs.ReadTextFromResource("Txtfiles/AlgonithmAQ4A3Action");
+                            isLocked=false;
+                    });
+                    isLocked=true;
+                    break;
+                case 8:
+                    fs.ReadTextFromResource("Txtfiles/AfternoonCafeAText5");
+                    break;
+                case 9:
+                    isGameEnd=true;
+                    break;
             }
             
             progress++;
-            Debug.Log("Progress: "+progress);
         }
         if (!isGameEnd)
         {
@@ -108,10 +145,9 @@ public class AfternoonCafeAScene : MonoBehaviour
                 // Continue the messages, stoping by [w] or [lr] keywords.
                 fs.Next();
             }
-            if(Input.GetKeyDown(KeyCode.R)){
-                // Resume the system that stopped by [stop] or Stop().
-                fs.Resume();
-            }
+        }
+        if(isGameEnd){
+            SceneManager.LoadScene("ShoppingAScene");
         }
         
     }
