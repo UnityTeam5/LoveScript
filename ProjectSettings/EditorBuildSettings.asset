@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SubMenu.unity
     guid: f27f19cd4f86d5b429b50a31da3bbd1a
+  - enabled: 1
+    path: Assets/Scenes/DinnerCScene.unity
+    guid: d1aa7cb29f38cb0498d901d467843745
+  - enabled: 1
+    path: Assets/Scenes/MovieCScene.unity
+    guid: 45a99a0885cdd464498e3c33628d75e5
   m_configObjects: {}

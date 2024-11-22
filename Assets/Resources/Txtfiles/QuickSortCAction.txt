@@ -1,0 +1,3 @@
+[c]<color=blue>[#RoleCName]：</color>(輕輕點頭)[lr]的確，快速排序更適合這種大量選項的情況。先選擇一個基準，再把菜按口味分成兩半篩選，這樣效率會更高。[w]
+[remove,fg1,spFadeOut_500]
+[hide][w]
