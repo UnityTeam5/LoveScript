@@ -1,0 +1,3 @@
+[c](後來兩人離開了咖啡廳去逛街)[w]
+[remove,RoleA,spFadeOut_1000]
+[remove,bg,spFadeOut_3000]
