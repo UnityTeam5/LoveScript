@@ -26,34 +26,37 @@
 ~~~
 Assets/
 ├── Resources/
-│   ├── Fonts/               # 儲存字體相關
-│   │   ├── FontGenerator/   # 儲存 TMP_FontAsset
+│   ├── Fonts/             # 儲存字體相關
+│   │   ├── FontGenerator/ # 儲存 TMP_FontAsset
 │   │   │   ├── MINGLIU--確認.asset
 │   │   │   └── MINGLIU--按任意鍵開始遊戲.asset
-│   │   │
-│   │   └── FontStyle/       # 儲存字體檔案 (.TTC/.ttf/.otf)
+│   │   └── FontStyle/     # 儲存字體檔案 (.TTC/.ttf/.otf)
 │   │       └── MINGLIU.TTC
 │   │
-│   ├── Sprites/             # 2D 精靈圖像或 UI 資源(目前未分類，下次更新會加入)
+│   ├── Sprites/           # 2D 精靈圖像或 UI 資源
+│   │   ├── Backgrounds/
+│   │   │   └── MainMenuBackground.png
 │   │   ├── Icons/
 │   │   │   ├── Arrow-Previous.png
 │   │   │   └── Exit.png
-│   │   └── Backgrounds/     # 背景圖片放置區
-│   │       └── MainMenuBackground.jpg
+│   │   └── Roles/   # 背景圖片放置區
+│   │       ├── Arrow-Previous.png
+│   │       └── Exit.png
 │   │
-│   ├── Audio/               # 音效與音樂(預計加入，未新增資料夾)
-│   │   ├── BGM/             # 此為示例
+│   ├── Audio/             # 音效與音樂(預計加入，未新增資料夾)
+│   │   ├── BGM/
 │   │   │   └── MainTheme.mp3
+│   │   │
 │   │   └── SFX/
 │   │       └── ButtonClick.wav
 │   │
 │   │
-│   └── Data/                # 遊戲配置或數據文件(預計加入，未新增資料夾)
-│       ├── GameConfig.json  # 此為示例
+│   └── Data/              # 遊戲配置或數據文件(預計加入，未新增資料夾)
+│       ├── GameConfig.json
 │       └── Localization/
 │           └── zh_TW.json 
 │
-├── Scripts/                 # 腳本文件
+├── Scripts/               # 腳本文件(**資料夾**命名請依場景名稱做分別，**檔案**命名無特別限制)
 │   ├── Menu/
 │   │   ├── ButtonPlayTextSetter.cs
 │   │   ├── PlayGameHandler.cs
@@ -64,14 +67,16 @@ Assets/
 │       ├── ReturnButtonEvent.cs
 │       └── SubmitButtonEvent.cs
 │
-├── Editor/                  # 腳本文件
+├── Editor/                # 腳本文件
 │   └── EventSystemChecker.cs
 │
-├── Scenes/                  # 遊戲場景檔案
+├── Scenes/                # 遊戲場景檔案
 │   ├── MainMenu.unity
 │   └── Game.unity
 │
-└── TextMesh Pro/            # 下載TextMesh Pro套件後自動生成，不可更動
+├── Flower/                # 開源套件引入包
+│
+└── TextMesh Pro/          # 下載TextMesh Pro套件後自動生成，不可更動
 ~~~
 
 ## Git如何使用？(給還不會使用或不太熟悉git的人服用)
@@ -79,7 +84,12 @@ Assets/
 以此專案為例，假設已經跟著上面的說明成功將專案clone下來後，接下來就只需要特別記三項事情(最常用)
 1. git add + 要新增的檔案位置 => 新增剛剛改動的檔案
 2. git commit -m "這裡放剛剛新增檔案的相關說明" => 在git中留言剛剛新增檔案的相關詳細說明(說明改動了什麼，新增？重構？樣式更改？等等其他)
-3. git push -u origin dev => 將剛剛的新增並留言完畢的git檔，推至遠端的git repository的dev分支
+3. git push -u origin dev => 將剛剛的新增並留言完畢的git檔，推至遠端的git repository的**dev**分支
+
+> 提醒：若是fork，則會有一個同名字的repo複製到你的倉庫裡，此時可以不必特別將分支改為dev，可逕行使用main分支，並在每次做完push至你的倉庫後(此時main會因為你的push而更新，但我這邊的主要倉庫並不會)，選擇PR至主要倉庫的**dev**分支(第一次的執行PR時需選擇，未選擇預設為PR至main)，之後等待核可即可<br>
+
+> 注意：若未核可，請注意退回後的commit，上面會說明為何退回，和可能需要修正的地方<br>
+> (等待核可需一些時間，請耐心等候~)
 
 > 例子：(branch -> dev) <br>
 > git add Assets/ <br>
