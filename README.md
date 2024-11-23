@@ -87,8 +87,9 @@ Assets/
 3. git push -u origin dev => 將剛剛的新增並留言完畢的git檔，推至遠端的git repository的**dev**分支
 
 > 提醒：若是fork，則會有一個同名字的repo複製到你的倉庫裡，此時可以不必特別將分支改為dev，可逕行使用main分支，並在每次做完push至你的倉庫後(此時main會因為你的push而更新，但我這邊的主要倉庫並不會)，選擇PR至主要倉庫的**dev**分支(第一次的執行PR時需選擇，未選擇預設為PR至main)，之後等待核可即可<br>
+
 > 注意：若未核可，請注意退回後的commit，上面會說明為何退回，和可能需要修正的地方<br>
-> (等待核可需一些時間，請耐心等候~)<br><br>
+> (等待核可需一些時間，請耐心等候~)
 
 > 例子：(branch -> dev) <br>
 > git add Assets/ <br>
