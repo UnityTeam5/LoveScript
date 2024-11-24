@@ -168,7 +168,7 @@ public class ShoppingAScene : MonoBehaviour
                 fs.Next();
             }
         }
-        if(fs.isCompleted && isGameEnd){
+        if(isGameEnd){
             SceneManager.LoadScene("ParkBenchAScene");
         }
         
