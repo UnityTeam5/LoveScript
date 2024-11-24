@@ -1,0 +1,3 @@
+[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[c]<color=red>[#RoleA]:</color>（輕笑）[lr]
+這有點像一個 while 迴圈，我們可以繼續走，等覺得肚子餓的時候再執行進店的動作。[w]

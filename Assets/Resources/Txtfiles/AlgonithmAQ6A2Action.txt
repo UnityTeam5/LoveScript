@@ -1,0 +1,3 @@
+[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[c]<color=red>[#RoleA]:</color>（點頭）[lr]
+整理房間確實也是一種遞迴，從一個小區域開始，然後逐步延伸到整個房間。最後看起來就像完成了一個大型函數！[w]

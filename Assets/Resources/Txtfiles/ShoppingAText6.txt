@@ -1,0 +1,3 @@
+[hide]
+[remove,RoleA,spFadeOut_1000]
+[remove,bg,spFadeOut_3000]

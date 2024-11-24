@@ -1,0 +1,3 @@
+[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[c]<color=red>[#RoleA]:</color>（笑）[lr]
+是啊，學做菜真的是很典型的遞迴過程，每個步驟都是一個小函數，最終合併起來就是完成一整道菜。[w]
