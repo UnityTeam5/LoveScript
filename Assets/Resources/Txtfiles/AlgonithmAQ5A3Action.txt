@@ -1,0 +1,3 @@
+[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[c]<color=red>[#RoleA]:</color>（思索片刻）[lr]
+這也不錯，但智能設備通常會一直等待，do...while 更適合在先執行一次操作之後再判斷。[w]
