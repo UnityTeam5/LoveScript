@@ -1,5 +1,7 @@
 [show]
-你和[#RoleA]約在學校附近一家藏在巷弄裡的咖啡廳。陽光透過玻璃窗灑在桌面上，整個空間瀰漫著咖啡的香氣和微弱的音樂聲。這裡的氛圍寧靜而舒適，剛好是你們在忙碌學期中，難得能輕鬆聊聊的地方。[w]
+你和[#RoleA]約在學校附近一家藏在巷弄裡的咖啡廳。[lr][wait,200]
+陽光透過玻璃窗灑在桌面上，整個空間瀰漫著咖啡的香氣和微弱的音樂聲。[lr][wait,200]
+這裡的氛圍寧靜而舒適，剛好是你們在忙碌學期中，難得能輕鬆聊聊的地方。[w]
 [image,bg,Sprites/Backgrounds/AfternoonCafeA,0,0,0,spFadeIn_1000]
 [image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=blue>[#myname]:</color>（笑著）[lr]
