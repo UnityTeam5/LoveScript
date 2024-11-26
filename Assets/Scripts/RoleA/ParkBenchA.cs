@@ -13,13 +13,13 @@ public class ParkBenchA : MonoBehaviour
     private String myname;
 
     void Start(){
-        // fs = FlowerManager.Instance.GetFlowerSystem("RoleA");
-        fs = FlowerManager.Instance.CreateFlowerSystem("RoleA");
-        RoleAname = "我老婆";
-        myname = "我";
-        fs.SetupDialog();
-        fs.SetVariable("RoleA",RoleAname);
-        fs.SetVariable("myname",myname);
+        fs = FlowerManager.Instance.GetFlowerSystem("RoleAFlowerSystem");
+        // fs = FlowerManager.Instance.CreateFlowerSystem("RoleAFlowerSystem",false);
+        // RoleAname = "我老婆";
+        // myname = "我";
+        // fs.SetupDialog();
+        // fs.SetVariable("RoleA",RoleAname);
+        // fs.SetVariable("myname",myname);
     }
 
     // Update is called once per frame
