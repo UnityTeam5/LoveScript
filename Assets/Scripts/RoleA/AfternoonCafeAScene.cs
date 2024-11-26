@@ -1,11 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Flower;
-using System.Runtime.CompilerServices;
 using System;
 using UnityEngine.SceneManagement;
-using UnityEditor.SearchService;
 
 public class AfternoonCafeAScene : MonoBehaviour
 {   
@@ -132,7 +128,7 @@ public class AfternoonCafeAScene : MonoBehaviour
                 case 8:
                     fs.ReadTextFromResource("Txtfiles/AfternoonCafeAText5");
                     break;
-                case 9:
+                default:
                     isGameEnd=true;
                     break;
             }

@@ -1,3 +1,4 @@
 [image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=red>[#RoleA]:</color>（搖搖頭）[lr]
-快排沒那麼快啦，O(n) 是不太可能的。要真的達到 O(n) 可能需要一些特殊的排序方法呢！[w]
+快排沒那麼快啦，O(n) 是不太可能的。[lr]
+要真的達到 O(n) 可能需要一些特殊的排序方法呢！[w]

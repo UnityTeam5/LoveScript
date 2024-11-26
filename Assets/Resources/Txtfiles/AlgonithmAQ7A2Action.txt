@@ -1,0 +1,3 @@
+[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[c]<color=red>[#RoleA]:</color>（點頭）[lr]
+對，我也覺得這個季節穿剛好合適，不會太冷也不會太熱。[w]

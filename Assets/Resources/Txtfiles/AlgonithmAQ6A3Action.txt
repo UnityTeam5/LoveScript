@@ -1,0 +1,3 @@
+[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[c]<color=red>[#RoleA]:</color>（興奮地笑）[lr]
+走迷宮也是！每次遇到分岔路的時候，就像是呼叫了一個遞迴函數，繼續選擇下一條路直到找到出口。[w]

@@ -1,0 +1,7 @@
+[hide]
+[remove,RoleA,spFadeOut_1000]
+[remove,bg,spFadeOut_1000]
+[image,bg,Sprites/Backgrounds/ShoppingA,0,0,0,spFadeIn_1000]
+[show]
+你們走到了一家時尚服飾店[lr]
+[#RoleA]停在了一面鏡子前，看著一件外套，似乎在思考要不要試穿。[w]

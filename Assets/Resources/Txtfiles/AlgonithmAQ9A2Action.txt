@@ -1,0 +1,3 @@
+[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[c]<color=red>[#RoleA]:</color>（笑著搖頭）[lr]
+那是程式出錯的時候才會發生啦，生活中的遞迴不會因為內存不足而停下來哦。[w]

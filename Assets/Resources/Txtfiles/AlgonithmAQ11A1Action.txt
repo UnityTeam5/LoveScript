@@ -1,0 +1,3 @@
+[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[c]<color=red>[#RoleA]:</color>（微笑）[lr]
+謝謝，我會的。[r]你也一樣，路上小心！[w]
