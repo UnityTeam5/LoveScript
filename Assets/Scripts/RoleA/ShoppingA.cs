@@ -13,8 +13,8 @@ public class ShoppingAScene : MonoBehaviour
     private String myname;
 
     void Start(){
-        fs = FlowerManager.Instance.GetFlowerSystem("RoleA");
-        // fs = FlowerManager.Instance.CreateFlowerSystem("RoleA");
+        fs = FlowerManager.Instance.GetFlowerSystem("RoleAFlowerSystem");
+        // fs = FlowerManager.Instance.CreateFlowerSystem("RoleAFlowerSystem",false);
         // RoleAname = "我老婆";
         // myname = "我";
         // fs.SetupDialog();
