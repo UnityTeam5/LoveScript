@@ -1,3 +1,4 @@
 [image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=red>[#RoleA]:</color>（笑著搖頭）[lr]
-那是二叉搜索樹最壞的情況，當樹不平衡的時候才會變成 O(n)。我們希望它能保持在 O(log n)。[w]
+那是二叉搜索樹最壞的情況，當樹不平衡的時候才會變成 O(n)。[lr]
+我們希望它能保持在 O(log n)。[w]
