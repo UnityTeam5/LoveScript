@@ -10,7 +10,7 @@ public class processController : MonoBehaviour
     private bool changeToCoffee = false; 
     private bool changeToZoo = false;
     private bool changedialogue = false;
-    private int test3;
+    private int testfinal;
     void Start()
     { 
         fs = FlowerManager.Instance.CreateFlowerSystem("campus", false);
