@@ -44,7 +44,8 @@ public class UsageCase : MonoBehaviour
         // ----- Integration DEMO -----
         // Your own logic control.
         if(flowerSys.isCompleted && !isGameEnd && !isLocked){
-            switch(progress){
+            switch(progress)
+            {
                 case 0:
                     flowerSys.ReadTextFromResource("start");
                     break;

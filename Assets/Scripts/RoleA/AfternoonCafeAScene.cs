@@ -15,7 +15,7 @@ public class AfternoonCafeAScene : MonoBehaviour
     void Start(){
         RoleAname = "我老婆";
         myname = "我";
-        fs = FlowerManager.Instance.CreateFlowerSystem("RoleA",false);
+        fs = FlowerManager.Instance.CreateFlowerSystem("RoleAFlowerSystem",false);
         fs.SetupDialog();
         fs.SetVariable("RoleA",RoleAname);
         fs.SetVariable("myname",myname);
