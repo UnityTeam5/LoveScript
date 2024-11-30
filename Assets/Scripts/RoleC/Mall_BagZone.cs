@@ -1,8 +1,10 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Flower;
+using UnityEngine.SceneManagement;
 
-public class DinnerCHandler : MonoBehaviour
+public class ShoppingBaggageCHandler : MonoBehaviour
 {
     FlowerSystem fs;
     private string RoleCName;
@@ -13,7 +15,7 @@ public class DinnerCHandler : MonoBehaviour
     {
         RoleCName = "角色C";
 
-        fs = FlowerManager.Instance.CreateFlowerSystem("DinnerCScene", false);
+        fs = FlowerManager.Instance.CreateFlowerSystem("Mall_BagZoneCScene", false);
         fs.SetupDialog();
         fs.SetupUIStage();
         fs.SetVariable("RoleCName", RoleCName);
@@ -26,32 +28,32 @@ public class DinnerCHandler : MonoBehaviour
             switch (progress)
             {
                 case 0:
-                    fs.ReadTextFromResource("Txtfiles/DinnerCText1");
+                    fs.ReadTextFromResource("Txtfiles/Mall_BagZoneCText1");
                     break;
                 case 1:
                     fs.SetupButtonGroup();
-                    fs.SetupButton("我比較喜歡選擇排序，因為它簡單直接。", () => {
+                    fs.SetupButton("我比較喜歡按顏色來挑，這樣搭配起來和諧。", () => {
                         fs.Resume();
                         fs.RemoveButtonGroup();
-                        fs.ReadTextFromResource("Txtfiles/SelectionSortCAction");
+                        fs.ReadTextFromResource("Txtfiles/AlgorithmCQ5A1Action");
                         isLocked = false;
                     });
-                    fs.SetupButton("快速排序效率更高，對於這麼多菜單選項應該更合適吧？", () => {
+                    fs.SetupButton("還是按大小排序吧，這樣能更快找到需要的容量。", () => {
                         fs.Resume();
                         fs.RemoveButtonGroup();
-                        fs.ReadTextFromResource("Txtfiles/QuickSortCAction");
+                        fs.ReadTextFromResource("Txtfiles/AlgorithmCQ5A2Action");
                         isLocked = false;
                     });
-                    fs.SetupButton("其實這種時候應該用二分搜尋法來縮小選擇範圍！", () => {
+                    fs.SetupButton("還是隨意挑選，也許能遇到意外的驚喜。", () => {
                         fs.Resume();
                         fs.RemoveButtonGroup();
-                        fs.ReadTextFromResource("Txtfiles/BinarySearchCAction");
+                        fs.ReadTextFromResource("Txtfiles/AlgorithmCQ5A3Action");
                         isLocked = false;
                     });
                     isLocked = true;
                     break;
                 case 2:
-                    fs.ReadTextFromResource("Txtfiles/DinnerCText2");
+                    fs.ReadTextFromResource("Txtfiles/Mall_BagZoneCText2");
                     break;
                 default:
                     isGameEnd = true;
@@ -70,7 +72,7 @@ public class DinnerCHandler : MonoBehaviour
 
         if (fs.isCompleted && isGameEnd)
         {
-            SceneManager.LoadScene("MovieCScene");
+            SceneManager.LoadScene("Mall_AccessoriesZoneCScene");
         }
     }
 }

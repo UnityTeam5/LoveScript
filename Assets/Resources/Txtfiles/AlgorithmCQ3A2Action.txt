@@ -1,0 +1,3 @@
+[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[c]<color=blue>[#RoleCName]:</color>（認真思考）[lr]
+嗯，這比較像是最近鄰居演算法（Nearest Neighbor Algorithm），確保我們不會走太遠的路，節省時間。[w]

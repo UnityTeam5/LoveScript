@@ -1,0 +1,4 @@
+[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[c]<color=blue>[#RoleCName]:</color>（點點頭）[lr]
+按大小排序也不錯，可以確保容量夠用，選擇起來方便又實用。[w]
+按大小逐一挑選，你們選了一個中等大小的背包，既能裝東西，又不顯得笨重。[w]

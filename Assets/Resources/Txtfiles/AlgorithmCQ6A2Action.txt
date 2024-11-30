@@ -1,0 +1,3 @@
+[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[c]<color=blue>[#RoleCName]:</color>（笑著挑起一條亮眼的項鍊）[lr]
+這條項鍊很吸引人，我們可以圍繞它來搭配其他飾品，看看效果如何。[w]
