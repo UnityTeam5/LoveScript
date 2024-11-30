@@ -1,0 +1,4 @@
+[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[c]<color=blue>[#RoleCName]:</color>（笑著同意）[lr]
+好，那我們就從中性色開始找，這樣可以適合各種穿搭。[w]
+你們從色調開始篩選，最後選中了幾個米色和駝色的小包，簡單又耐看。[w]

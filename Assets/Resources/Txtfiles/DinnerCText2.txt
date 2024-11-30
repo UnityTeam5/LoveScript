@@ -1,0 +1,3 @@
+[hide]
+[remove,RoleC,spFadeOut_1000]
+[remove,bg_DinnerC,spFadeOut_3000]
