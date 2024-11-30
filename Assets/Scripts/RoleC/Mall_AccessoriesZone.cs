@@ -1,8 +1,10 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Flower;
+using UnityEngine.SceneManagement;
 
-public class DinnerCHandler : MonoBehaviour
+public class Mall_AccessoriesZone : MonoBehaviour
 {
     FlowerSystem fs;
     private string RoleCName;
@@ -13,7 +15,7 @@ public class DinnerCHandler : MonoBehaviour
     {
         RoleCName = "角色C";
 
-        fs = FlowerManager.Instance.CreateFlowerSystem("DinnerCScene", false);
+        fs = FlowerManager.Instance.CreateFlowerSystem("Mall_AccessoriesZoneCScene", false);
         fs.SetupDialog();
         fs.SetupUIStage();
         fs.SetVariable("RoleCName", RoleCName);
@@ -26,32 +28,32 @@ public class DinnerCHandler : MonoBehaviour
             switch (progress)
             {
                 case 0:
-                    fs.ReadTextFromResource("Txtfiles/DinnerCText1");
+                    fs.ReadTextFromResource("Txtfiles/Mall_AccessoriesZoneCText1");
                     break;
                 case 1:
                     fs.SetupButtonGroup();
-                    fs.SetupButton("我比較喜歡選擇排序，因為它簡單直接。", () => {
+                    fs.SetupButton("我們可以按照飾品的類型來挑選，先選耳環，再選項鍊。", () => {
                         fs.Resume();
                         fs.RemoveButtonGroup();
-                        fs.ReadTextFromResource("Txtfiles/SelectionSortCAction");
+                        fs.ReadTextFromResource("Txtfiles/AlgorithmCQ6A1Action");
                         isLocked = false;
                     });
-                    fs.SetupButton("快速排序效率更高，對於這麼多菜單選項應該更合適吧？", () => {
+                    fs.SetupButton("先挑一件最吸引人的，接著逐一搭配。", () => {
                         fs.Resume();
                         fs.RemoveButtonGroup();
-                        fs.ReadTextFromResource("Txtfiles/QuickSortCAction");
+                        fs.ReadTextFromResource("Txtfiles/AlgorithmCQ6A2Action");
                         isLocked = false;
                     });
-                    fs.SetupButton("其實這種時候應該用二分搜尋法來縮小選擇範圍！", () => {
+                    fs.SetupButton("要不要隨興選幾件飾品，隨意搭配？", () => {
                         fs.Resume();
                         fs.RemoveButtonGroup();
-                        fs.ReadTextFromResource("Txtfiles/BinarySearchCAction");
+                        fs.ReadTextFromResource("Txtfiles/AlgorithmCQ6A3Action");
                         isLocked = false;
                     });
                     isLocked = true;
                     break;
                 case 2:
-                    fs.ReadTextFromResource("Txtfiles/DinnerCText2");
+                    fs.ReadTextFromResource("Txtfiles/Mall_AccessoriesZoneCText2");
                     break;
                 default:
                     isGameEnd = true;
@@ -70,7 +72,7 @@ public class DinnerCHandler : MonoBehaviour
 
         if (fs.isCompleted && isGameEnd)
         {
-            SceneManager.LoadScene("MovieCScene");
+            SceneManager.LoadScene("DailyLifeCScene");
         }
     }
 }
