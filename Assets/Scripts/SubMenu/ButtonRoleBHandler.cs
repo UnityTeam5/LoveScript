@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ButtonRoleCHandler : MonoBehaviour
+public class ButtonRoleBHandler : MonoBehaviour
 {
-    public string imgPath = "Sprites/Roles/C(Role)_1";
+    public string imgPath = "Sprites/Roles/B(Role)_1";
     void Start()
     {
         // 尋找 "Image" 子物件
@@ -30,7 +30,7 @@ public class ButtonRoleCHandler : MonoBehaviour
         if (customSprite != null)
         {
             imageComponent.sprite = customSprite;
-            Debug.Log("Sprite C set successfully");
+            Debug.Log("Sprite B set successfully");
         }
         else
         {
@@ -39,11 +39,11 @@ public class ButtonRoleCHandler : MonoBehaviour
 
         // 設定按鈕點擊事件
         Button btn = this.GetComponent<Button>();
-        if (btn.name == "Button_RoleC")
+        if (btn.name == "Button_RoleB")
         {
             btn.onClick.AddListener(() =>{
-                Debug.Log("Role C");
-                SceneManager.LoadScene("DinnerCScene");
+                Debug.Log("Role B");
+                SceneManager.LoadScene("CafesNearCampusBScene");
             });
         }
     }

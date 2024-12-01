@@ -1,4 +1,4 @@
-[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]:</color>（認真挑選著衣服）[lr]
 那我選褲子，你選上衣。這樣我們能更快找到適合的組合！[w]
 你們分頭行動，挑了幾件有潛力的單品。[lr]
