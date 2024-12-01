@@ -10,7 +10,7 @@ public class ButtonRoleAHandler : MonoBehaviour
     void Start()
     {
         // 尋找 "Image" 子物件
-        Transform imageTransform = transform.Find("Image");
+        Transform imageTransform = transform.Find("Mask/Image");
         if (imageTransform == null)
         {
             Debug.LogError("Image component is null");
