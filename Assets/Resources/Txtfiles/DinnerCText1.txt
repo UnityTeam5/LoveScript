@@ -1,6 +1,6 @@
 [show]
-[image,bg_DinnerC,Sprites/Backgrounds/ShoppingC1920edit,0,0,0,spFadeIn_1000]
-[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[image,bg_DinnerC,Sprites/Backgrounds/DinnerC1920edit,0,0,0,spFadeIn_1000]
+[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 夜幕降臨，你和新認識的女生──[#RoleCName]，一起來到一間氣氛不錯的小餐廳共進晚餐。[w]
 餐廳的燈光溫暖柔和，菜肴散發出誘人的香氣。[w]
 角色C穿著簡約大方，臉上帶著一絲內斂的微笑。[w]

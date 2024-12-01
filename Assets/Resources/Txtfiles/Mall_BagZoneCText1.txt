@@ -2,7 +2,7 @@
 [image,bg_BagZoneC,Sprites/Backgrounds/ShoppingC1920edit,0,0,0,spFadeIn_1000]
 試穿完服裝後，你們來到包包專區。[lr]
 琳瑯滿目的包包排成一列，從大到小、從簡約到華麗，風格多樣。她拿起一個米色小包，仔細端詳著。[w]
-[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 <color=blue>[#RoleCName]:</color>（一邊看手機，一邊笑）[lr]
 挑包包的時候，我們可以試試用排序演算法來挑出心儀的幾款。[w]
 <color=red>我：</color>[lr]

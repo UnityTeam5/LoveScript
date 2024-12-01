@@ -1,4 +1,4 @@
-[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]:</color>（聳肩，笑著看你）[lr]
 窮舉法的確可以，只是得一件一件地試，可能會有點累。[w]
 <color=red>我：</color>(尷尬地笑笑)[lr]
