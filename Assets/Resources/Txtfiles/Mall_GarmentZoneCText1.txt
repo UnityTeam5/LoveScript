@@ -3,7 +3,7 @@
 夜色漸深，你和角色C來到商場中一家風格簡約的服裝店。[r]
 她拉著你走進店內，四處瀏覽著琳琅滿目的服飾。[r]
 柔和的燈光照在展示櫃上，讓衣服顯得格外吸引人。[w]
-[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 <color=blue>[#RoleCName]:</color>（笑著看著你，眼神中帶著些許好奇）[lr]
 挑衣服啊，應該也是有策略可循的吧？[r]
 不然這麼多衣服，隨便挑恐怕有點難搭。[w]

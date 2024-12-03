@@ -1,4 +1,4 @@
-[image,RoleC,Sprites/Roles/C(Role)_1,-605,-38,1,spFadeIn_1000]
+[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]：</color>(輕輕點頭)[lr]
 的確，快速排序更適合這種大量選項的情況。[r]
 先選擇一個基準，再把菜按口味分成兩半篩選，這樣效率會更高。[w]
