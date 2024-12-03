@@ -4,14 +4,13 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public class processController : MonoBehaviour
+public class CafeNearCampusBHandler : MonoBehaviour
 {
     FlowerSystem fs;
     private int progress = 0;
     private bool changeToCoffee = false; 
     private bool changeToZoo = false;
     private bool changedialogue = false;
-    private bool isEndGame = false;
     void Start()
     { 
         fs = FlowerManager.Instance.CreateFlowerSystem("campus", false);
@@ -126,11 +125,10 @@ public class processController : MonoBehaviour
                 case 6:
                     if(changeToZoo == true)
                     {
-                        fs.ReadTextFromResource("Txtfiles/zoo");
-                        progress++;
+                        SceneManager.LoadScene("ZooBScene");
                     }
                     break;
-                case 7:
+                /*case 7:
                     fs.SetupButtonGroup();
                     fs.SetupButton("那這棵樹有幾層呢？最高層的是什麼？",()=>
                     {
@@ -233,7 +231,7 @@ public class processController : MonoBehaviour
                     break;
                 default:
                     isEndGame = true;
-                    break;
+                    break;*/
             }
         }
 
@@ -242,9 +240,9 @@ public class processController : MonoBehaviour
             fs.Next();
         }
 
-        if (fs.isCompleted && isEndGame)
+        /*if (fs.isCompleted && isEndGame)
         {
             SceneManager.LoadScene("Menu");
-        }
+        }*/
     }
 }

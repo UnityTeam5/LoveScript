@@ -1,5 +1,4 @@
 [show]
-[remove,CafeNearCampusB,spFadeOut_500]
 [image,ZooB,Sprites/Backgrounds/ZooB,0,0,0,spFadeIn_1000]
 [image,roleB,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 來到了動物園約會[w]
