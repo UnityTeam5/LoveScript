@@ -22,7 +22,6 @@ public class processController : MonoBehaviour
     {
         if(fs.isCompleted)
         {
-            Debug.LogError(progress);
             switch(progress)
             {
                 case 0:
