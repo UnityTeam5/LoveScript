@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DailyLifeCScene.unity
     guid: a1ad511e0d2bbe24d920973fcf7024c7
+  - enabled: 1
+    path: Assets/Scenes/CafesNearCampusBScene.unity
+    guid: ca0ee0208acede94b8c46b6d109a3dd1
+  - enabled: 1
+    path: Assets/Scenes/ZooBScene.unity
+    guid: bb54bd384858c7f40a18b4bd6079dc8d
   m_configObjects: {}
