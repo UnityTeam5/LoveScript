@@ -8,4 +8,5 @@
 <color=red>角色B：</color>（輕輕拉了拉你的袖子）[lr]
 我們總不能一直坐在這裡吧，要不我們去喝點咖啡吧？畢竟咖啡店就是實際應用嘛。[w]
 跟xx前往咖啡廳>> [w]
+[remove,roleB,spFadeOut_500]
 [hide]
