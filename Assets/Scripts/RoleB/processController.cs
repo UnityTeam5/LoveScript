@@ -1,6 +1,7 @@
 using UnityEngine;
 using Flower;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System;
 
 public class processController : MonoBehaviour
@@ -10,7 +11,7 @@ public class processController : MonoBehaviour
     private bool changeToCoffee = false; 
     private bool changeToZoo = false;
     private bool changedialogue = false;
-    private int finaltest1;
+    private bool isEndGame = false;
     void Start()
     { 
         fs = FlowerManager.Instance.CreateFlowerSystem("campus", false);
@@ -21,6 +22,7 @@ public class processController : MonoBehaviour
     {
         if(fs.isCompleted)
         {
+            Debug.LogError(progress);
             switch(progress)
             {
                 case 0:
@@ -224,12 +226,26 @@ public class processController : MonoBehaviour
                     });
                     progress++;
                     break;
+                case 12:
+                    if(changedialogue == true)
+                    {
+                        progress++;
+                    }
+                    break;
+                default:
+                    isEndGame = true;
+                    break;
             }
         }
 
         if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             fs.Next();
+        }
+
+        if (fs.isCompleted && isEndGame)
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
 }
