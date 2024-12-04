@@ -13,5 +13,6 @@
 <color=red>角色B：</color>（笑著看著你）[lr]
 今天聊得很開心！下次我們還可以討論更多資料結構的應用，或者試試寫些程式，一起解決問題。[w]
 [remove,roleB,spFadeOut_500]
+[remove,CafeNearCampusB,spFadeOut_500]
 跟xx前往動物園約會吧 >> [w]
 
