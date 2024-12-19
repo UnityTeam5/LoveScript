@@ -9,19 +9,43 @@ public class DinnerCHandler : MonoBehaviour
     private int progress = 0;
     private bool isGameEnd = false;
     private bool isLocked = false;
+
+    private bool isPaused = false;
+
     void Start()
     {
         RoleCName = "角色C";
-
-        fs = FlowerManager.Instance.CreateFlowerSystem("DinnerCScene", false);
-        fs.SetupDialog();
-        fs.SetupUIStage();
-        fs.SetVariable("RoleCName", RoleCName);
+        try
+        {
+            fs = FlowerManager.Instance.GetFlowerSystem("DinnerCScene");
+            fs.Resume();
+        }
+        catch
+        {
+            fs = FlowerManager.Instance.CreateFlowerSystem("DinnerCScene", false);
+            fs.SetupDialog();
+            fs.SetupUIStage();
+            fs.SetVariable("RoleCName", RoleCName);
+        }
     }
 
     void Update()
     {
-        if (fs.isCompleted && !isGameEnd && !isLocked)
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Escape key is pressed");
+            if (isPaused)
+            {
+                ResumeGame();
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
+
+        if (fs.isCompleted && !isGameEnd && !isLocked && !isPaused)
         {
             switch (progress)
             {
@@ -67,10 +91,44 @@ public class DinnerCHandler : MonoBehaviour
                 fs.Next();
             }
         }
-
+        
         if (fs.isCompleted && isGameEnd)
         {
             SceneManager.LoadScene("MovieCScene");
         }
+    }
+
+    void PauseGame()
+    {
+        isPaused = true;
+        Time.timeScale = 0;
+        SetupPauseMenu();
+    }
+
+    void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1;
+        fs.RemoveButtonGroup();
+    }
+
+    void SetupPauseMenu()
+    {
+        fs.SetupButtonGroup();
+        fs.SetupButton("繼續", () => {
+            ResumeGame();
+        });
+        fs.SetupButton("返回主畫面", () => {
+            Time.timeScale = 1;
+            fs.ReadTextFromResource("Txtfiles/BackToSubMenu");
+            fs.RemoveButtonGroup();
+            SceneManager.LoadScene("SubMenu");
+        });
+
+        fs.SetupButton("重新此場景", () => {
+            Time.timeScale = 1;
+            fs.RemoveButtonGroup();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        });
     }
 }
