@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using Flower;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using Modules;
 public class ZooBHandler : MonoBehaviour
 {
@@ -15,8 +12,16 @@ public class ZooBHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fs = FlowerManager.Instance.CreateFlowerSystem("zoo", false);
-        fs.SetupDialog();
+        try
+        {
+            fs = FlowerManager.Instance.GetFlowerSystem("zoo");
+            fs.Resume();
+        }
+        catch
+        {
+            fs = FlowerManager.Instance.CreateFlowerSystem("zoo", false);
+            fs.SetupDialog();
+        }
         pausedMenuHandler = new PausedMenuHandler(fs);
     }
 
