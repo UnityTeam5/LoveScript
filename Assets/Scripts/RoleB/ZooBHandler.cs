@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 using Modules;
 public class ZooBHandler : MonoBehaviour
 {
-    FlowerSystem fs;
-    PausedMenuHandler pausedMenuHandler;
+    private FlowerSystem fs;
+    private PausedMenuHandler pausedMenuHandler;
     private int progress = 0;
     private bool changedialogue = false;
     private bool isEndGame = false;

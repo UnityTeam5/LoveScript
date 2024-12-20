@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using Modules;
 public class CafeNearCampusBHandler : MonoBehaviour
 {
-    FlowerSystem fs;
+    private FlowerSystem fs;
     private PausedMenuHandler pausedMenuHandler;
     private int progress = 0;
     private bool changeToCoffee = false; 
