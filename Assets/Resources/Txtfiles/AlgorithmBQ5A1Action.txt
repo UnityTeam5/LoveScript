@@ -1,5 +1,5 @@
 [show]
-[image,roleB,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
+[image,role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 改變順序用什麼資料結構[w]
 <color=red>角色B：</color>（露出思索的表情）[lr]
 如果要靈活改變順序，雙向鏈結串列（Doubly Linked List）可能會更合適。[w]它讓我們可以隨時往前或往後遍歷，而不只是單向進行操作。[w]
@@ -8,5 +8,5 @@
 今天過得真快！不知不覺就到傍晚了。資料結構和生活中的例子真是無處不在啊。[w]
 <color=blue>你：</color>[lr]
 的確，感覺生活中的很多情境都能用資料結構來解釋和優化。[w]
-[remove,roleB,spFadeOut_500]
+[remove,role,spFadeOut_500]
 [hide]
