@@ -1,3 +1,3 @@
-[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]:</color>（點頭贊同）[lr]
 貪婪演算法的確適合快速選擇！我們先挑些顏色比較顯眼的，看看效果怎麼樣。[w]

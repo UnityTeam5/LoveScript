@@ -1,11 +1,13 @@
 [show]
-[image,bg_AccessoriesZoneC,Sprites/Backgrounds/ShoppingC1920edit,0,0,0,spFadeIn_1000]
-挑選完包包後，你們來到飾品專區，牆上掛滿了各種飾品，包括耳環、手鏈和項鍊。角色C挑起一副小巧的耳環，微笑著看向你。[lr]
-[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
+[image,bg,Sprites/Backgrounds/ShoppingC1920edit,0,0,0,spFadeIn_1000]
+挑選完包包後，你們來到飾品專區，牆上掛滿了各種飾品，包括耳環、手鏈和項鍊。角色C挑起一副小巧的耳環，微笑著看向你。[w]
+[image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 <color=blue>[#RoleCName]:</color>（笑著說）[lr]
 搭配飾品就像是在微調參數，一點點小改變能讓整體效果更完美。[w]
+
 <color=red>我：</color>(點頭)[lr]
 沒錯，這就像在進行參數優化，細微調整也能讓穿搭更完整。[w]
+
 <color=blue>[#RoleCName]:</color>（眼神中閃爍著一絲好奇）[lr]
 這樣的話，我們可以先挑幾樣飾品，再進行排列組合，看看哪些搭配效果更佳。[w]
-[remove,RoleC,spFadeOut_1]
+[remove,Role,spFadeOut_1]
