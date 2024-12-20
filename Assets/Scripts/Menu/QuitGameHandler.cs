@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +14,6 @@ public class QuitGameHandler : MonoBehaviour
     {
         Debug.Log("Quit");
         Application.Quit();
-        EditorApplication.isPlaying = false;
     }
 
 }

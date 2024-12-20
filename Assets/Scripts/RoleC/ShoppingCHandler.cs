@@ -1,28 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Flower;
 using UnityEngine.SceneManagement;
+using Modules;
 
 public class ShoppingCHandler : MonoBehaviour
 {
-    FlowerSystem fs;
+    private FlowerSystem fs;
+    private PausedMenuHandler pausedMenuHandler;
     private string RoleCName;
     private int progress = 0;
     private bool isGameEnd = false;
     private bool isLocked = false;
+    private bool isPaused = false;
+    
     void Start()
     {
         RoleCName = "角色C";
 
-        fs = FlowerManager.Instance.CreateFlowerSystem("ShoppingCScene", false);
-        fs.SetupDialog();
-        fs.SetupUIStage();
-        fs.SetVariable("RoleCName", RoleCName);
+        try
+        {
+            fs = FlowerManager.Instance.GetFlowerSystem("ShoppingCScene");
+            fs.Resume();
+        }
+        catch
+        {
+            fs = FlowerManager.Instance.CreateFlowerSystem("ShoppingCScene", false);
+            fs.SetupDialog();
+            fs.SetupUIStage();
+            fs.SetVariable("RoleCName", RoleCName);
+        }
+
+        pausedMenuHandler = new PausedMenuHandler(fs);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pausedMenuHandler.TogglePause();
+        }
+
         if (fs.isCompleted && !isGameEnd && !isLocked)
         {
             switch (progress)

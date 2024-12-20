@@ -5,5 +5,5 @@
 <color=red>我：</color>[lr]
 的確，演算法不僅僅用在程式設計中，生活中到處都可以看到它們的影子。[w]
 [hide]
-[remove,RoleC,spFadeOut_1000]
-[remove,bg_ShoppingClothesC,spFadeOut_3000]
+[remove,Role,spFadeOut_1000]
+[remove,bg,spFadeOut_3000]
