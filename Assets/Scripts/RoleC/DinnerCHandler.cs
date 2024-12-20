@@ -12,8 +12,6 @@ public class DinnerCHandler : MonoBehaviour
     private bool isGameEnd = false;
     private bool isLocked = false;
 
-    private bool isPaused = false;
-
     void Start()
     {
         RoleCName = "角色C";
@@ -41,7 +39,7 @@ public class DinnerCHandler : MonoBehaviour
             pausedMenuHandler.TogglePause();
         }
 
-        if (fs.isCompleted && !isGameEnd && !isLocked && !isPaused)
+        if (fs.isCompleted && !isGameEnd && !isLocked)
         {
             switch (progress)
             {
