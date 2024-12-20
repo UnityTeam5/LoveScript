@@ -1,5 +1,5 @@
 [show]
-[image,roleB,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 今天的約會像什麼資料結構？[w]
 <color=red>角色B：</color>（微笑，沉思）[lr]
 今天的約會嘛，應該像是圖結構（Graph）。我們走過了很多路徑，每個選擇都通向不同的結果，像是走在動物園裡，遇到不同的動物、風景，感覺很豐富。[w]
@@ -11,6 +11,6 @@
 你們笑著道別，這次的約會圓滿結束，充滿了資料結構的樂趣和意義。[w]
 這段約會從動物園開始，經歷了動物表演和樹結構的討論，最終在出口處以生活比喻資料結構結束。角色B的性格依舊溫暖，並且擅長將資料結構融入生活中的例子，讓整個過程既輕鬆又充滿知識。[w]
 結束這段旅程>>
-[remove,roleB,spFadeOut_500]
-[remove,ZooB,spFadeOut_500]
+[remove,Role,spFadeOut_500]
+[remove,bg,spFadeOut_500]
 [hide]

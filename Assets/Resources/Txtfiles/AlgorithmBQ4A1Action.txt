@@ -1,5 +1,5 @@
 [show]
-[image,roleB,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 樹有幾層？[w]
 <color=red>角色B：</color>（思考片刻）[lr]
 嗯，根據我們分類的細緻程度，這棵樹可能會有好幾層。[w]最高層的節點應該是動物界，再向下是門、綱、目、科、屬、種。每一層節點都細分得越來越具體。[w]
@@ -9,5 +9,5 @@
 這就是先進先出的概念嗎？跟我們剛才在咖啡店排隊有點像。[w]
 <color=red>角色B：</color>[lr]
 對呀，這正是佇列的應用。每一個動物完成動作後，下一個就自動接上，這讓整個流程順暢運行。[w]
-[remove,roleB,spFadeOut_500]
+[remove,Role,spFadeOut_500]
 [hide]
