@@ -1,5 +1,5 @@
 [show]
-[image,role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 情況:在咖啡店排隊買咖啡 [w]
 <color=red>角色B:</color>(笑了) [lr]
 對，這個例子完美！先來的客人先點咖啡，這就是佇列的典型應用。[w]
@@ -8,5 +8,5 @@
 <color=red>角色B：</color>（輕輕拉了拉你的袖子）[lr]
 我們總不能一直坐在這裡吧，要不我們去喝點咖啡吧？畢竟咖啡店就是實際應用嘛。[w]
 跟xx前往咖啡廳>> [w]
-[remove,role,spFadeOut_500]
+[remove,Role,spFadeOut_500]
 [hide]

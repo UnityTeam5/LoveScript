@@ -1,5 +1,5 @@
 [show]
-[image,role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 動作指令像控制迴圈[w]
 <color=red>角色B：</color>（點頭）
 沒錯，這些動作就像是一個 while 迴圈，只要條件滿足，動物們就會不斷執行動作。這樣可以確保每個步驟都按照規定執行，直到條件變化。
@@ -8,5 +8,5 @@
 今天過得真快！不知不覺就到傍晚了。資料結構和生活中的例子真是無處不在啊。[w]
 <color=blue>你：</color>[lr]
 的確，感覺生活中的很多情境都能用資料結構來解釋和優化。[w]
-[remove,role,spFadeOut_500]
+[remove,Role,spFadeOut_500]
 [hide]

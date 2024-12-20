@@ -1,5 +1,5 @@
 [show]
-[image,role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 環狀鏈結串列[w]
 <color=red>角色B：</color>（笑了起來，興奮地揮了揮手）[w]
 對！環狀鏈結串列就像一個不間斷的行程，不斷地回到起點，像是無限迴圈一樣，無論走到哪，都會回到初始狀態。[w]
@@ -8,5 +8,5 @@
 <color=red>角色B：</color>（笑著看向你）[lr]
 妳知道嗎？有時候我覺得我們的生活其實也像一種資料結構，總是有固定的流程，卻又充滿了變數和選擇。[w]
 <color=red>你：</color>[lr]「那妳覺得我們現在是在用什麼結構？」[w]
-[remove,role,spFadeOut_500]
+[remove,Role,spFadeOut_500]
 [hide]
