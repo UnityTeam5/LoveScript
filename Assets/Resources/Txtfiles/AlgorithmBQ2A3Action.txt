@@ -1,5 +1,5 @@
 [show]
-[image,roleB,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 單向鏈結串列有點麻煩[w]
 <color=red>角色B：</color>（輕輕搖頭，微笑）[w]
 是有點麻煩，不過有時候它也挺實用的，像是在需要節省記憶體的場景。每種資料結構都有它的應用場景，看情況選擇最合適的就好。[w]
@@ -8,5 +8,5 @@
 <color=red>角色B：</color>（笑著看向你）[lr]
 妳知道嗎？有時候我覺得我們的生活其實也像一種資料結構，總是有固定的流程，卻又充滿了變數和選擇。[w]
 <color=blue>你：</color>「那妳覺得我們現在是在用什麼結構？」[w]
-[remove,roleB,spFadeOut_500]
+[remove,Role,spFadeOut_500]
 [hide]

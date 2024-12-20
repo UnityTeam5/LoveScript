@@ -4,10 +4,11 @@ using Flower;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using Modules;
 public class ZooBHandler : MonoBehaviour
 {
     FlowerSystem fs;
+    PausedMenuHandler pausedMenuHandler;
     private int progress = 0;
     private bool changedialogue = false;
     private bool isEndGame = false;
@@ -16,6 +17,7 @@ public class ZooBHandler : MonoBehaviour
     {
         fs = FlowerManager.Instance.CreateFlowerSystem("zoo", false);
         fs.SetupDialog();
+        pausedMenuHandler = new PausedMenuHandler(fs);
     }
 
     // Update is called once per frame
@@ -135,9 +137,13 @@ public class ZooBHandler : MonoBehaviour
                     break;
             }
         }
-         if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             fs.Next();
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            pausedMenuHandler.TogglePause();
         }
 
         if (fs.isCompleted && isEndGame)
