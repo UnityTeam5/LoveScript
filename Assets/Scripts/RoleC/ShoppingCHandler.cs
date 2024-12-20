@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Flower;
 using UnityEngine.SceneManagement;
+using Modules;
 
 public class ShoppingCHandler : MonoBehaviour
 {
-    FlowerSystem fs;
+    private FlowerSystem fs;
+    private PausedMenuHandler pausedMenuHandler;
     private string RoleCName;
     private int progress = 0;
     private bool isGameEnd = false;
@@ -29,21 +29,15 @@ public class ShoppingCHandler : MonoBehaviour
             fs.SetupUIStage();
             fs.SetVariable("RoleCName", RoleCName);
         }
+
+        pausedMenuHandler = new PausedMenuHandler(fs);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Escape key is pressed");
-            if (isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
+            pausedMenuHandler.TogglePause();
         }
 
         if (fs.isCompleted && !isGameEnd && !isLocked)
@@ -97,38 +91,5 @@ public class ShoppingCHandler : MonoBehaviour
         {
             SceneManager.LoadScene("Mall_GarmentZoneCScene");
         }
-    }
-    void PauseGame()
-    {
-        isPaused = true;
-        Time.timeScale = 0;
-        SetupPauseMenu();
-    }
-
-    void ResumeGame()
-    {
-        isPaused = false;
-        Time.timeScale = 1;
-        fs.RemoveButtonGroup();
-    }
-
-    void SetupPauseMenu()
-    {
-        fs.SetupButtonGroup();
-        fs.SetupButton("繼續", () => {
-            ResumeGame();
-        });
-        fs.SetupButton("返回主畫面", () => {
-            Time.timeScale = 1;
-            fs.ReadTextFromResource("Txtfiles/BackToSubMenu");
-            fs.RemoveButtonGroup();
-            SceneManager.LoadScene("SubMenu");
-        });
-
-        fs.SetupButton("重新此場景", () => {
-            Time.timeScale = 1;
-            fs.RemoveButtonGroup();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        });
     }
 }
