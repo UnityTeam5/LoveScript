@@ -239,6 +239,7 @@ public class CafeNearCampusBHandler : MonoBehaviour
         {
             fs.Next();
         }
+        
 
         /*if (fs.isCompleted && isEndGame)
         {
