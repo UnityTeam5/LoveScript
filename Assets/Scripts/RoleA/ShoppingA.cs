@@ -32,7 +32,6 @@ public class ShoppingAScene : MonoBehaviour
         pausedMenuHandler = new PausedMenuHandler(fs);
     }
 
-    // Update is called once per frame
     void Update(){   
         if(fs.isCompleted && !isGameEnd && !isLocked){
             switch(progress){
