@@ -1,12 +1,10 @@
 using UnityEngine;
 using Flower;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System;
 using Modules;
 public class CafeNearCampusBHandler : MonoBehaviour
 {
-    FlowerSystem fs;
+    private FlowerSystem fs;
     private PausedMenuHandler pausedMenuHandler;
     private int progress = 0;
     private bool changeToCoffee = false; 
@@ -14,8 +12,16 @@ public class CafeNearCampusBHandler : MonoBehaviour
     private bool changedialogue = false;
     void Start()
     { 
-        fs = FlowerManager.Instance.CreateFlowerSystem("campus", false);
-        fs.SetupDialog();
+        try
+        {
+            fs = FlowerManager.Instance.GetFlowerSystem("campus");
+            fs.Resume();
+        }
+        catch
+        {
+            fs = FlowerManager.Instance.CreateFlowerSystem("campus", false);
+            fs.SetupDialog();
+        }
         pausedMenuHandler = new PausedMenuHandler(fs);
     }
 

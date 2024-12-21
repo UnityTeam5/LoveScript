@@ -1,22 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using Flower;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using Modules;
 public class ZooBHandler : MonoBehaviour
 {
-    FlowerSystem fs;
-    PausedMenuHandler pausedMenuHandler;
+    private FlowerSystem fs;
+    private PausedMenuHandler pausedMenuHandler;
     private int progress = 0;
     private bool changedialogue = false;
     private bool isEndGame = false;
     // Start is called before the first frame update
     void Start()
     {
-        fs = FlowerManager.Instance.CreateFlowerSystem("zoo", false);
-        fs.SetupDialog();
+        try
+        {
+            fs = FlowerManager.Instance.GetFlowerSystem("zoo");
+            fs.Resume();
+        }
+        catch
+        {
+            fs = FlowerManager.Instance.CreateFlowerSystem("zoo", false);
+            fs.SetupDialog();
+        }
         pausedMenuHandler = new PausedMenuHandler(fs);
     }
 

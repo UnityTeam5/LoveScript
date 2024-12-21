@@ -11,7 +11,6 @@ public class Mall_AccessoriesZone : MonoBehaviour
     private int progress = 0;
     private bool isGameEnd = false;
     private bool isLocked = false;
-    private bool isPaused = false;
     
     void Start()
     {
