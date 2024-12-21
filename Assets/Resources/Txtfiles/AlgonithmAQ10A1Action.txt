@@ -1,4 +1,4 @@
-[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=red>[#RoleA]:</color>（思索了一下，輕輕笑）[lr]
 應該就是回去準備一下明天的課程吧，或者可能會寫點代碼，最近在做個小專案呢。[lr]
 你呢，有什麼特別的安排嗎？[w]

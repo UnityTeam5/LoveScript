@@ -2,5 +2,5 @@
 你望著她的方向，心中留著今日相處的愉快回憶，帶著輕鬆的心情也踏上了回家的路。[w]
 =======End=======[wait,2000]
 [hide]
-[remove,RoleA,spFadeOut_3000]
+[remove,Role,spFadeOut_3000]
 [remove,bg,spFadeOut_3000]

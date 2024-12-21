@@ -1,5 +1,5 @@
 [hide]
-[remove,RoleA,spFadeOut_1000]
+[remove,Role,spFadeOut_1000]
 [remove,bg,spFadeOut_1000]
 [image,bg,Sprites/Backgrounds/ShoppingA,0,0,0,spFadeIn_1000]
 [show]

@@ -6,4 +6,4 @@
 哪有，只是平常喜歡動手寫寫程式。反正程式設計嘛，總是要多練習才能進步。[w]
 [#RoleA]將咖啡杯放下，看向窗外。[w]
 微風輕輕搖晃著樹葉，她似乎在放鬆心情，請問你要：[w]
-[remove,RoleA,spFadeOut_1]
+[remove,Role,spFadeOut_1]

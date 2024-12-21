@@ -12,4 +12,4 @@
 一直比較選項，直到找到滿意的那個。[w]
 [c]<color=red>[#RoleA]:</color>[lr]
 欸?好像有一種情況，遞迴會終止...[w]
-[remove,RoleA,spFadeOut_1]
+[remove,Role,spFadeOut_1]

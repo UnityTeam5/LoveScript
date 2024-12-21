@@ -1,4 +1,4 @@
-[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=red>[#RoleA]:</color>（安靜了幾秒後，微笑著看向你）[lr]
 [wait,2000]
 有時候，這樣靜靜地什麼都不說也挺好的，不是嗎？[w]

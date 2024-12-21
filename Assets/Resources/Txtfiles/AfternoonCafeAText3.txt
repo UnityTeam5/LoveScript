@@ -11,4 +11,4 @@
 我用的是 Python 來實現[r]寫了個簡單的函數來解析使用者的問題，根據關鍵詞給出答案。[w]
 [c]<color=red>[#RoleA]:</color>[lr]
 你知道怎麼定義 Python 函數吧？[w]
-[remove,RoleA,spFadeOut_1]
+[remove,Role,spFadeOut_1]

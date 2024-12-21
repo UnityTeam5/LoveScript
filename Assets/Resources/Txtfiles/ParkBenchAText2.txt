@@ -7,4 +7,4 @@
 你們一起走出公園，沿著小路慢慢往外走。[lr]
 夕陽染紅了天空，晚風輕拂而過，帶著一天將近的溫柔感。[lr]
 到達街邊時，你和[#RoleA]互道再見。[w]
-[remove,RoleA,spFadeOut_1]
+[remove,Role,spFadeOut_1]

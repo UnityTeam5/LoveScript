@@ -1,3 +1,3 @@
-[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=red>[#RoleA]:</color>（輕輕點頭）[lr]
 嗯，確實是該走了，時間過得真快呢。[w]

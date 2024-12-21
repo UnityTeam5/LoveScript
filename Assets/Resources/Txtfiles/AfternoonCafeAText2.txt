@@ -6,4 +6,4 @@
 看情況吧，哈希表用來做查找很快，但樹結構也有它的優勢。[w]
 [c]<color=red>[#RoleA]:</color>[lr]
 我最近剛好在學樹和圖的應用。你還記得二叉搜索樹嗎？它的查找複雜度應該是多少呢？[w]
-[remove,RoleA,spFadeOut_1]
+[remove,Role,spFadeOut_1]

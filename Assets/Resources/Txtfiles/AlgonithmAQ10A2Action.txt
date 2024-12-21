@@ -1,3 +1,3 @@
-[image,RoleA,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/A(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=red>[#RoleA]:</color>（微微驚訝，隨後笑著搖頭）[lr]
 不用啦，我家不算遠，搭個公車就能到。不過謝謝你關心，很貼心哦。[w]

@@ -2,10 +2,12 @@ using UnityEngine;
 using Flower;
 using System;
 using UnityEngine.SceneManagement;
+using Modules;
 
 public class ShoppingAScene : MonoBehaviour
 {   
-    FlowerSystem fs;
+    private FlowerSystem fs;
+    private PausedMenuHandler pausedMenuHandler;
     private int progress = 0;
     private bool isGameEnd = false;
     private bool isLocked = false;
@@ -13,13 +15,21 @@ public class ShoppingAScene : MonoBehaviour
     private String myname;
 
     void Start(){
-        fs = FlowerManager.Instance.GetFlowerSystem("RoleAFlowerSystem");
-        // fs = FlowerManager.Instance.CreateFlowerSystem("RoleAFlowerSystem",false);
-        // RoleAname = "我老婆";
-        // myname = "我";
-        // fs.SetupDialog();
-        // fs.SetVariable("RoleA",RoleAname);
-        // fs.SetVariable("myname",myname);
+        RoleAname = "我老婆";
+        myname = "我";
+        try
+        {
+            fs = FlowerManager.Instance.GetFlowerSystem("RoleAFlowerSystem");
+            fs.Resume();
+        }
+        catch
+        {
+            fs = FlowerManager.Instance.CreateFlowerSystem("RoleAFlowerSystem",false);
+            fs.SetupDialog();
+            fs.SetVariable("RoleA",RoleAname);
+            fs.SetVariable("myname",myname);
+        }
+        pausedMenuHandler = new PausedMenuHandler(fs);
     }
 
     // Update is called once per frame
@@ -166,6 +176,9 @@ public class ShoppingAScene : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButton(0)){
                 // Continue the messages, stoping by [w] or [lr] keywords.
                 fs.Next();
+            }
+            if (Input.GetKeyDown(KeyCode.Escape)){
+                pausedMenuHandler.TogglePause();
             }
         }
         if(isGameEnd){
