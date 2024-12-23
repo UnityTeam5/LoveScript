@@ -1,3 +1,3 @@
-[image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/C(Role)_1,-500,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]:</color>（笑著搖頭）[lr]
 這麼複雜的演算法來選電影嗎？有點過了吧，但動態規劃確實能找到最優解。[w]

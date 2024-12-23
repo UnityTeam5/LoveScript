@@ -1,3 +1,3 @@
-[image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/C(Role)_1,-500,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]:</color>（點頭，同意）[lr]
 嗯，或許比較一下是個好主意，畢竟我們要找到全局最優的選擇。[w]
