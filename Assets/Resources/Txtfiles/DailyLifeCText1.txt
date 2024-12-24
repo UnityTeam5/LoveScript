@@ -1,15 +1,19 @@
 [show]
 [image,bg,Sprites/Backgrounds/ShoppingC1920edit,0,0,0,spFadeIn_1000]
-[image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 逛完店後，你們走在商場外的街道上，夜空中星光點點，微風徐徐吹拂著。[r]
 [#RoleCName]抬頭看著夜空，輕聲說道：[w]
 
+[image,Role,Sprites/Roles/C(Role)_4,0,0,1,spFadeIn_1000]
 <color=blue>[#RoleCName]：</color>[lr]
 今天真的很開心，不僅挑了很多東西，也體驗了一次演算法的應用。這樣的購物方式有趣又實用。[w]
+[remove,Role]
 
+[image,Role,Sprites/Roles/C(Role)_4_dark,0,0,1]
 <color=red>我：</color>(微笑著點頭)[lr]
 是啊，演算法不僅僅能用在程式中，生活中也能派上用場，讓我們在決策時更有效率。[w]
+[remove,Role]
 
+[image,Role,Sprites/Roles/C(Role)_4,0,0,1]
 角色C轉過頭來，臉上帶著溫柔的微笑：[r]
 這麼說來，我們的生活也是一場不斷排序和篩選的過程，找到最適合自己的選擇。[w]
 
