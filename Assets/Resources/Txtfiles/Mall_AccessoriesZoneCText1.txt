@@ -1,5 +1,6 @@
 [show]
 [image,bg,Sprites/Backgrounds/Mall_AccessoriesZoneC,0,0,0,spFadeIn_1000]
+[audio,Audio,Audios/shoppingAudio3,true,0.5]
 挑選完包包後，你們來到飾品專區，牆上掛滿了各種飾品，包括耳環、手鏈和項鍊。角色C挑起一副小巧的耳環，微笑著看向你。[w]
 [image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 <color=blue>[#RoleCName]:</color>（笑著說）[lr]

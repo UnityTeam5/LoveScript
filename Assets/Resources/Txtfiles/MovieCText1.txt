@@ -1,5 +1,6 @@
 [show]
 [image,bg,Sprites/Backgrounds/MovieC1920edit,0,0,0,spFadeIn_1000]
+[audio,Audio,Audios/movieAudio,true,0.5]
 晚餐後，你們決定去看一部熱門的電影。走進影院時，角色C正在看手機上的影評。[w]
 [image,Role,Sprites/Roles/C(Role)_3_reverse,-500,0,1,spFadeIn_1000]
 <color=blue>[#RoleCName]:</color>（一邊看手機，一邊笑）[lr]

@@ -1,5 +1,6 @@
 [show]
 [image,bg,Sprites/Backgrounds/Mall_BagZoneC,0,0,0,spFadeIn_1000]
+[audio,Audio,Audios/shoppingAudio2,true,0.5]
 試穿完服裝後，你們來到包包專區。[lr]
 琳瑯滿目的包包排成一列，從大到小、從簡約到華麗，風格多樣。她拿起一個米色小包，仔細端詳著。[w]
 [image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]

@@ -1,5 +1,6 @@
 [show]
 [image,bg,Sprites/Backgrounds/Mall_GarmentZoneC,0,0,0,spFadeIn_1000]
+[audio,Audio,Audios/shoppingAudio,true,0.5]
 夜色漸深，你和角色C來到商場中一家風格簡約的服裝店。[r]
 她拉著你走進店內，四處瀏覽著琳琅滿目的服飾。[r]
 柔和的燈光照在展示櫃上，讓衣服顯得格外吸引人。[w]
