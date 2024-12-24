@@ -1,3 +1,4 @@
 [hide]
 [remove,Role]
 [remove,bg]
+[remove,Audio]
