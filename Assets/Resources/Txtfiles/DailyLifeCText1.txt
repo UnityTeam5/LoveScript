@@ -1,5 +1,6 @@
 [show]
 [image,bg,Sprites/Backgrounds/ShoppingC1920edit,0,0,0,spFadeIn_1000]
+[audio,Audio,Audios/finalAudio,true,0.5]
 逛完店後，你們走在商場外的街道上，夜空中星光點點，微風徐徐吹拂著。[r]
 [#RoleCName]抬頭看著夜空，輕聲說道：[w]
 
@@ -23,3 +24,4 @@
 [hide]
 [remove,Role,spFadeOut_1000]
 [remove,bg,spFadeOut_3000]
+[remove,Audio]

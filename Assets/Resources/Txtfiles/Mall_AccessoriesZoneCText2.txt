@@ -1,3 +1,4 @@
 [hide]
 [remove,Role,spFadeOut_1000]
 [remove,bg,spFadeOut_3000]
+[remove,Audio]
