@@ -1,3 +1,3 @@
-[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/C(Role)_4,-100,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]:</color>（輕輕笑著）[lr]
 隨意走也是一種策略，或許我們能發現一些意外的驚喜呢。[w]

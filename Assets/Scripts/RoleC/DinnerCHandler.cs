@@ -1,26 +1,44 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Flower;
+using Modules;
 
 public class DinnerCHandler : MonoBehaviour
 {
-    FlowerSystem fs;
+    private FlowerSystem fs;
+    private PausedMenuHandler pausedMenuHandler;
     private string RoleCName;
     private int progress = 0;
     private bool isGameEnd = false;
     private bool isLocked = false;
+
     void Start()
     {
         RoleCName = "角色C";
+        
+        try
+        {
+            fs = FlowerManager.Instance.GetFlowerSystem("DinnerCScene");
+            fs.Resume();
+        }
+        catch
+        {
+            fs = FlowerManager.Instance.CreateFlowerSystem("DinnerCScene", false);
+            fs.SetupDialog();
+            fs.SetVariable("RoleCName", RoleCName);
+        }
 
-        fs = FlowerManager.Instance.CreateFlowerSystem("DinnerCScene", false);
-        fs.SetupDialog();
-        fs.SetupUIStage();
-        fs.SetVariable("RoleCName", RoleCName);
+        pausedMenuHandler = new PausedMenuHandler(fs);
     }
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pausedMenuHandler.TogglePause();
+        }
+
         if (fs.isCompleted && !isGameEnd && !isLocked)
         {
             switch (progress)
@@ -67,7 +85,7 @@ public class DinnerCHandler : MonoBehaviour
                 fs.Next();
             }
         }
-
+        
         if (fs.isCompleted && isGameEnd)
         {
             SceneManager.LoadScene("MovieCScene");

@@ -1,3 +1,3 @@
-[image,RoleC,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]:</color>（笑著點頭）[lr]
 隨興選擇反而能激發靈感。說不定隨意搭配的效果會出乎意料地好呢。[w]

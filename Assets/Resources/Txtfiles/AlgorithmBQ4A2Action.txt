@@ -1,5 +1,5 @@
 [show]
-[image,roleB,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/roleB,0,0,1,spFadeIn_1000]
 共享棲息地的動物[w]
 <color=red>角色B：</color>（微笑點頭）[w]
 對，牠們應該會共享一個父節點，像是同一個科或者屬的動物。這就是樹結構的另一個特點，共享的屬性從父節點繼承下來。[w]
@@ -9,5 +9,5 @@
 這就是先進先出的概念嗎？跟我們剛才在咖啡店排隊有點像。[w]
 <color=red>角色B：</color>[lr]
 對呀，這正是佇列的應用。每一個動物完成動作後，下一個就自動接上，這讓整個流程順暢運行。[w]
-[remove,roleB,spFadeOut_500]
+[remove,Role,spFadeOut_500]
 [hide]
