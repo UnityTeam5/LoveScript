@@ -1,3 +1,3 @@
-[image,Role,Sprites/Roles/C(Role)_1,0,0,1,spFadeIn_1000]
+[image,Role,Sprites/Roles/C(Role)_1,-500,0,1,spFadeIn_1000]
 [c]<color=blue>[#RoleCName]:</color>（微笑）[lr]
 妳說得對，貪婪演算法在這種情況下應該可以解決問題，我們不用再看其他選擇了。[w]

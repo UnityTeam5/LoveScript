@@ -1,5 +1,5 @@
 [show]
-[image,bg,Sprites/Backgrounds/ShoppingC1920edit,0,0,0,spFadeIn_1000]
+[image,bg,Sprites/Backgrounds/Mall_GarmentZoneC,0,0,0,spFadeIn_1000]
 夜色漸深，你和角色C來到商場中一家風格簡約的服裝店。[r]
 她拉著你走進店內，四處瀏覽著琳琅滿目的服飾。[r]
 柔和的燈光照在展示櫃上，讓衣服顯得格外吸引人。[w]
@@ -7,8 +7,14 @@
 <color=blue>[#RoleCName]:</color>（笑著看著你，眼神中帶著些許好奇）[lr]
 挑衣服啊，應該也是有策略可循的吧？[r]
 不然這麼多衣服，隨便挑恐怕有點難搭。[w]
+[remove,Role]
+
+[image,Role,Sprites/Roles/C(Role)_1_dark,0,0,1]
 <color=red>我：</color>(思索了一下，點頭)[lr]
 其實可以用組合演算法來挑搭配。挑幾件不同的單品，然後排列組合看看效果怎麼樣。[w]
+[remove,Role]
+
+[image,Role,Sprites/Roles/C(Role)_1,0,0,1]
 <color=blue>[#RoleCName]:</color>（興奮地點頭）[lr]
 太好了！我們可以先選幾件喜歡的上衣和褲子，然後試試看各種搭配效果。[w]
 [remove,Role,spFadeOut_1]

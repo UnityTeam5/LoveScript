@@ -25,7 +25,6 @@ public class ShoppingCHandler : MonoBehaviour
         {
             fs = FlowerManager.Instance.CreateFlowerSystem("ShoppingCScene", false);
             fs.SetupDialog();
-            fs.SetupUIStage();
             fs.SetVariable("RoleCName", RoleCName);
         }
 
